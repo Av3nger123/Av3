@@ -50,8 +50,49 @@
       </random>
     </template>
   </category>
+    
   <category>
-  <pattern></pattern>
+      <pattern>check *</pattern>
+      <template>
+          <think>
+              <set name = "prof"><star /></set>
+          </think>
+          Ok
+      </template>
+  </category>
+  
+  <prof name = "C.hota"/>
+  <category>
+      <pattern>can you check his cources</pattern>
+      <template>
+          <random>
+              <li>C programming</li>
+              <li>Artificial Intelligence</li>
+          </random>
+      </template>
+  </category>
+  
+  <prof name = "N.L.BhanuMurthy"/>
+  <category>
+      <pattern>can you check his cources</pattern>
+      <template>
+          <random>
+              <li>Machine Learning</li>
+              <li>Data Structures and Algoriths</li>
+          </random>
+      </template>
+  </category>
+  <category>
+      <pattern>Finance</pattern>
+      <template>
+          <random>
+              <li>FOFA</li>
+              <li>BAV</li>
+              <li>FM</li>
+              <li>FRAM</li>
+              <li>SAPM</li>
+          </random>
+      </template>
   </category>
 
 </aiml>
