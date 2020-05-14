@@ -1,7 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml>
+
   <category>
-    <pattern>*</pattern>
-    <template>I have no answer for that.</template>
+    <pattern>Hi! I am raj</pattern>
+    <template>Hello! there.How are you </template>
+    <pattern>I am fine,good</pattern>
+    <template>Glad to here that</template>
+    <pattern>I don't know</pattern>
+    <template>Why? dont you have any specific thing in your mind</template>
+    <pattern>I dont have any</pattern>
+    <template>
+      <random>
+        <li>Can you tell me anything that i can look int0</li>
+        <li>Can you tell me under which faculty</li>
+        <li>Can you tell me tour placment preference</li>
+      </random>
+    </template>
   </category>
+
+  <category>
+    <pattern>Can you with choosing the electives,subjects for the semester</pattern>
+    <template>
+      <random>
+        <li>Yes! can you specify the domain</li>
+        <li>Yes! for sure.In which major would you like have</li>
+      </random>
+    </template>
+  </category>
+
+  <category>
+    <pattern>IT,Data Science</pattern>
+    <template>
+      <random>
+        <li>Foundations of Data Science </li>
+        <li>Machine Learning</li>
+        <li>Optimization</li>
+        <li>Data Structures and Algoriths</li>
+        <li>Object Oriented Prigramming</li>
+        <li>Operatin Systems</li>
+      </random>
+    </template>
+  </category>
+  <category>
+  <pattern></pattern>
+  </category>
+
 </aiml>
