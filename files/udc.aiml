@@ -2,13 +2,17 @@
 <aiml>
 
   <category>
-    <pattern>Hi! I am raj</pattern>
-    <template>Hello! there.How are you </template>
+    <pattern>Hi! I am *</pattern>
+    <template>Hello! there.How are you <think><set name = "username"><star /></set></think> </template>
+  </category>
+  
+  <category>
     <pattern>I am fine,good</pattern>
-    <template>Glad to here that</template>
-    <pattern>I don't know</pattern>
-    <template>Why? dont you have any specific thing in your mind</template>
-    <pattern>I dont have any</pattern>
+    <template>Glad to here that <get name = "username"/></template>
+  </category>
+  
+  <category>
+     <pattern>I dont have any</pattern>
     <template>
       <random>
         <li>Can you tell me anything that i can look int0</li>
@@ -17,7 +21,12 @@
       </random>
     </template>
   </category>
-
+  
+  <category>
+    <pattern>I don't know</pattern>
+    <template>Why? dont you have any specific thing in your mind</template>
+  </category>
+  
   <category>
     <pattern>Can you with choosing the electives,subjects for the semester</pattern>
     <template>
