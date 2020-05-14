@@ -2,12 +2,12 @@
 <aiml>
 
   <category>
-    <pattern>Hi! I am *</pattern>
+    <pattern>Hi I am *</pattern>
     <template>Hello! there.How are you <think><set name = "username"><star /></set></think> </template>
   </category>
   
   <category>
-    <pattern>I am fine,good</pattern>
+    <pattern>I am fine</pattern>
     <template>Glad to here that <get name = "username"/></template>
   </category>
   
@@ -23,12 +23,12 @@
   </category>
   
   <category>
-    <pattern>I don't know</pattern>
+    <pattern>I dont know</pattern>
     <template>Why? dont you have any specific thing in your mind</template>
   </category>
   
   <category>
-    <pattern>Can you with choosing the electives,subjects for the semester</pattern>
+    <pattern>Can you help with choosing the electives for the semester</pattern>
     <template>
       <random>
         <li>Yes! can you specify the domain</li>
