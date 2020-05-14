@@ -12,7 +12,7 @@
   </category>
   
   <category>
-     <pattern>I dont have any</pattern>
+    <pattern>*</pattern>
     <template>
       <random>
         <li>Can you tell me anything that i can look int0</li>
@@ -23,12 +23,7 @@
   </category>
   
   <category>
-    <pattern>I dont know</pattern>
-    <template>Why? dont you have any specific thing in your mind</template>
-  </category>
-  
-  <category>
-    <pattern>Can you help with choosing the electives for the semester</pattern>
+    <pattern>Can you help with choose the electives for the semester</pattern>
     <template>
       <random>
         <li>Yes! can you specify the domain</li>
@@ -38,8 +33,11 @@
   </category>
 
   <category>
-    <pattern>IT,Data Science</pattern>
+    <pattern>IT or Data Science </pattern>
     <template>
+        <think>
+              <set name = "major">It or Data Science</set>
+          </think>
       <random>
         <li>Foundations of Data Science </li>
         <li>Machine Learning</li>
@@ -50,21 +48,26 @@
       </random>
     </template>
   </category>
-    
+  
   <category>
-      <pattern>check *</pattern>
+      <pattern>N L Bhanumurthy cources</pattern>
       <template>
-          <think>
-              <set name = "prof"><star /></set>
+         <think>
+              <set name = "prof">N.L.BhanuMurthy</set>
           </think>
-          Ok
+          <random>
+              <li>Machine Learning</li>
+              <li>Data Structures and Algoriths</li>
+          </random>
       </template>
   </category>
   
-  <prof name = "C.hota"/>
-  <category>
-      <pattern>can you check his cources</pattern>
+   <category>
+      <pattern>C Hota cources</pattern>
       <template>
+         <think>
+              <set name = "prof">C Hota</set>
+          </think>
           <random>
               <li>C programming</li>
               <li>Artificial Intelligence</li>
@@ -72,19 +75,12 @@
       </template>
   </category>
   
-  <prof name = "N.L.BhanuMurthy"/>
-  <category>
-      <pattern>can you check his cources</pattern>
-      <template>
-          <random>
-              <li>Machine Learning</li>
-              <li>Data Structures and Algoriths</li>
-          </random>
-      </template>
-  </category>
   <category>
       <pattern>Finance</pattern>
       <template>
+          <think>
+              <set name = "major">Finance</set>
+          </think>
           <random>
               <li>FOFA</li>
               <li>BAV</li>
